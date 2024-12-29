@@ -74,7 +74,6 @@ const App = () => {
               },
             }}
           >
-            {/* Rest of the card content remains the same */}
             <CardContent sx={{ padding: "2rem" }}>
               <Typography
                 variant="h4"

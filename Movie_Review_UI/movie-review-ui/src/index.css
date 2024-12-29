@@ -24,11 +24,11 @@ a:hover {
 
 body {
   margin: 0;
-  display: block; /* Changed from flex for more flexibility in child layouts */
+  display: block; 
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--background-color); /* Use root variable */
-  color: var(--color); /* Use root variable */
+  background-color: var(--background-color);
+  color: var(--color); 
   font-family: inherit;
   overflow: hidden;
 }

@@ -19,7 +19,6 @@ const WelcomePage = () => {
         backgroundColor: "#f0f2f5",
       }}
     >
-      {/* Fixed Header */}
       <AppBar sx={{ backgroundColor: "#384A7B" }}>
         <Toolbar>
           <MovieIcon sx={{ mr: 2 }} />
@@ -27,11 +26,10 @@ const WelcomePage = () => {
         </Toolbar>
       </AppBar>
 
-      {/* Main Content */}
       <Box
         sx={{
           position: "absolute",
-          top: "64px", // Height of AppBar
+          top: "64px", 
           left: 0,
           right: 0,
           bottom: 0,

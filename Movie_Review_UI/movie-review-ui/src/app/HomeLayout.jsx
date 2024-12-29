@@ -1,18 +1,17 @@
 import React from "react";
 import { AppBar, Box, Typography, Toolbar } from "@mui/material";
 import MovieIcon from "@mui/icons-material/Movie";
-import { Outlet } from "react-router-dom"; // For nested routes (children components)
+import { Outlet } from "react-router-dom"; 
 
 const HomeLayout = () => {
   return (
     <Box
       sx={{
         position: "relative",
-        minHeight: "100vh", // Ensure content fills entire height of the screen
-        backgroundColor: "#f0f2f5", // Background color for the entire app
+        minHeight: "100vh",
+        backgroundColor: "#f0f2f5",
       }}
     >
-      {/* Fixed Header */}
       <AppBar
         sx={{
           position: "fixed",
@@ -28,22 +27,20 @@ const HomeLayout = () => {
         </Toolbar>
       </AppBar>
 
-      {/* Main Content */}
       <Box
         sx={{
           position: "absolute",
-          top: "64px", // Height of AppBar (64px by default)
+          top: "64px", 
           left: 0,
           right: 0,
           bottom: 0,
-          background: "#1A2127", // Background color for the content area
+          background: "#1A2127", 
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           padding: "20px",
         }}
       >
-        {/* Outlet for nested routes (to display the child components) */}
         <Outlet />
       </Box>
     </Box>
